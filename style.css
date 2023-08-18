@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: #1e5afa;
+    --color-primary-variant: rgba(0, 0, 240, 0.2);
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --color-black: #000f37;
+    --color-dark: #575757;
+
+    --bottom-section-padding: 12rem;
+    --bottom-section-padding-mobile: 8rem;
+
+    --transition: all 400ms ease;
+
+    --container-width: 84%;
+    --container-width-tablet: 90%;
+    --container-width-mobile: 94%;
+}
+
+
+
+/* =================================================
+----------------- General Style -------------------
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    background: var(--color-white);
+    color: var(--color-dark);
+    /* background: black; */
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+.lead {
+    width: 63%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 1.5rem auto 3rem;
+}
+
+h1 {
+    font-size: 5.6rem;
+    line-height: 1;
+    color: var(--color-black);
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+a {
+    color: var(--color-white);
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
+.avatar {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.3rem;
+    border-radius: 0.4rem;
+    background: var(--color-white);
+    color: var(--color-black);
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+section {
+    max-width: 100vw;
+    padding-bottom: var(--bottom-section-padding);
+}
+
+
+
+/* =================================================
+--------------------- Navbar ---------------------
+================================================== */
+nav {
+    width: 100vw;
+    height: 6rem;
+    display: grid;
+    place-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    /* background: var(--color-primary); */
+}
+
+.window-scroll {
+    background: var(--color-primary);
+    border-bottom: 1px solid var(--color-white);
+    box-shadow: 0 1rem 1rem var(--color-primary-variant);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-logo h3 {
+    font-size: 1.7rem;
+}
+
+.nav-signin-signup {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+nav button {
+    display: none;
+}
+
+
+
+/* =================================================
+--------------------- Header ---------------------
+================================================== */
+header {
+    background: url(./image/bg.png) no-repeat top center/100vw;
+    max-width: 100vw;
+    text-align: center;
+    padding-bottom: var(--bottom-section-padding);
+}
+
+
+
+.header-title {
+    padding-top: 12rem;
+    color: var(--color-white);
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+
+.header-image {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cta a {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+    border-radius: 0.7rem;
+    padding: 0.8rem 1.6rem;
+    font-weight: 400;
+    background: #000;
+}
+
+.cta a:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.cta .logo {
+    width: 2rem;
+}
+
+.cta a h4 {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.header-socials {
+    /* background: red; */
+    position: absolute;
+    top: 38%;
+    left: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.header-decoration-1 {
+    position: absolute;
+    left: 0;
+    width: 10rem;
+    opacity: 1rem;
+    opacity: 0.5;
+}
+
+.header-decoration-2 {
+    position: absolute;
+    right: 0;
+    margin-top: -24rem;
+    width: 13rem;
+}
+
+
+
+/* =================================================
+----------------- About Section -------------------
+================================================== */
+.about-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.about-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.about-article-title {
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+
+.about-article .btn {
+    margin-top: 2.4rem;
+}
+
+
+
+/* =================================================
+----------------- Client Section -------------------
+================================================== */
+#clients {
+    text-align: center;
+}
+
+.clients-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.clients-container div {
+    background: var(--color-light);
+    display: grid;
+    place-items: center;
+    padding: 2rem 1rem;
+    transition: all 300ms ease;
+}
+
+.clients-container div:hover {
+    background: var(--color-white);
+}
+
+.clients-container img {
+    width: 10rem;
+}
+
+
+
+/* =================================================
+--------------- Testimonial Section ----------------
+================================================== */
+#testimonials h1 {
+    text-align: center;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    background: var(--color-light);
+    padding: 3rem;
+    font-size: 0.88rem;
+    border: 1px solid transparent;
+    transition: all 300ms ease;
+}
+
+.testimonial:hover {
+    background: var(--color-white);
+    border-color: var(--color-primary-variant);
+    color: var(--color-primary);
+    box-shadow: 0 2rem 2rem var(--color-primary-variant);
+    z-index: 1;
+}
+
+.testimonial-client {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+/* =================================================
+------------------ FAQs Section --------------------
+================================================== */
+#faqs h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.faqs-container {
+    width: 44%;
+    display: grid;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq {
+    background: var(--color-light);
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.faq:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.faq-icon i {
+    font-size: 1.4rem;
+    /* font-weight: 200; */
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.faq-answer {
+    margin-top: 1rem;
+    display: none;
+}
+
+.faq.open {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    box-shadow: 0 2rem 2rem var(--color-primary-variant);
+    z-index: 1;
+}
+
+.faq.open .faq-answer {
+    display: block;
+}
+
+
+
+/* =================================================
+--------------- DownloadApp Section ----------------
+================================================== */
+.downloadApp-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* grid-template-columns: 55% 1%; */
+    align-items: center;
+    gap: 8rem;
+
+}
+
+.downloadApp-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.downloadApp-content p {
+    width: 80%;
+}
+
+#downloadApp .cta {
+    justify-content: start;
+    margin-top: 2rem;
+}
+
+.downloadApp-image {
+    width: 30rem;
+}
+
+
+
+/* =================================================
+--------------- Subscribe Section -----------------
+================================================== */
+.subscribe-container {
+    background: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    height: 20rem;
+    border-radius: 2rem;
+}
+
+.subscribe-text p {
+    margin-top: 1.4rem;
+    width: 80%;
+}
+
+
+
+/* =================================================
+--------------- Footer Section -----------------
+================================================== */
+footer {
+    background: var(--color-primary);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    justify-content: center;
+}
+
+.footer-container > div h4 {
+    margin-bottom: 1.6rem;
+    color: var(--color-white);
+}
+
+.footer-logo h3 {
+    font-size: 1.7rem;
+}
+
+.footer-1 p {
+    margin: 1rem 0 2rem;
+    width: 20rem;
+}
+
+.footer-subscribe {
+    background: transparent;
+    border: 1px solid var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    width: 80%;
+}
+
+.footer-subscribe input {
+    background: transparent;
+    color: var(--color-white);
+    margin-left: 1rem;
+    border: none;
+}
+
+.footer-subscribe input::placeholder {
+    color: var(--color-light);
+}
+
+.footer-subscribe button {
+    background: var(--color-white);
+    color: var(--color-black);
+    width: 3rem;
+    height: 100%;
+    font-size: 1.2rem;
+    transition: all 300ms ease;
+}
+
+.footer-subscribe button:hover {
+    background: var(--color-light);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+footer ul li {
+    margin-bottom: 1rem;
+}
+
+footer ul li a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.footer-4 p {
+    margin-bottom: 1.6rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem;
+    color: var(--color-light);
+    border-top: 1px solid var(--color-light);
+    font-size: 1rem;
+}
+
+.copyright-name {
+    color: #fff23f;
+}
+
+
+
+/* =================================================
+--------------- Media Query(Tablet) ----------------
+================================================== */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-tablet);
+    }
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+    }
+
+    .lead {
+        width: 72%;
+        margin-bottom: 3rem;
+    }
+
+    section {
+        margin-bottom: var(--bottom-section-padding-mobile);
+    }
+
+
+
+/* =================================================
+----------------- Navbar(Tablet) ------------------
+================================================== */
+    nav {
+        background: var(--color-primary);
+    }
+    
+    .nav-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .nav-logo {
+        position: relative;
+        margin-left: 2rem;
+        left: 0;
+        transform: translate(0);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 6rem ;
+        right: 0;
+        background: var(--color-white);
+        height: max-content;
+        width: 18rem;
+        box-shadow: -2rem 2rem 3rem rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        gap: 0;
+        z-index: 3;
+        display: none;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        height: 6rem;
+    }
+    
+    .nav-menu li a {
+        color: var(--color-black);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 3rem;
+        transition: all 400ms ease;
+    }
+    
+    .nav-menu li a:hover {
+        background: var(--color-primary);
+        color: var(--color-white);
+    }
+    
+    .nav-signin-signup {
+        display: none;
+    }
+
+    nav button {
+        display: inline-block;
+        background: transparent;
+        border: transparent;
+        margin-right: 2.5rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav button#menu-close-btn {
+        display: none;
+    }
+
+    nav button i {
+        font-size: 2.4rem;
+    }
+
+
+
+/* =================================================
+----------------- Header(Tablet) ------------------
+================================================== */
+    header {
+        padding-bottom: var(--bottom-section-padding-mobile);
+        /* background: url(./image/bg.png) no-repeat top center/100vw 130vh; */
+        background: var(--color-primary);
+    }
+
+    .header-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .cta {
+        margin-top: 3rem;
+    }
+
+    .header-socials {
+        top: 24;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .header-decoration-1,
+    .header-decoration-2 {
+        display: none;
+    }
+
+
+
+/* =================================================
+----------------- About(Tablet) ------------------
+================================================== */
+    #about {
+        margin-top: 7rem;
+    }
+
+    .about-article {
+        margin: 0 auto;
+    }
+
+
+
+/* =================================================
+----------------- Client(Tablet) ------------------
+================================================== */
+    .clients-container {
+        gap: 1rem;
+    }
+
+
+
+/* =================================================
+--------------- Testimonials(Tablet) ----------------
+================================================== */
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+
+
+/* =================================================
+--------------- DownloadApp(Tablet) ----------------
+================================================== */
+    #downloadApp {
+        text-align: center;
+    }
+
+    #downloadApp .cta {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+
+    .downloadApp-content p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .downloadApp-container {
+        gap: 3rem;
+    }
+
+    .downloadApp-image {
+        width: 20rem;
+    }
+
+
+
+/* =================================================
+--------------- Subscribe(Tablet) ----------------
+================================================== */
+    .subscribe-container {
+        flex-direction: column;
+        gap: 5rem;
+        height: auto;
+        padding: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .subscribe-container p {
+        width: 96%;
+    }
+
+
+
+/* =================================================
+--------------- Footer(Tablet) ----------------
+================================================== */
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+/* =================================================
+--------------- Media Query(Mobile) ---------------
+================================================== */
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .lead {
+        width: var(--container-width-mobile);
+    }
+
+
+
+/* =================================================
+----------------- Navbar(Mobile) ------------------
+================================================== */
+    .nav-logo {
+        margin-left: 1rem;
+    }
+
+    .nav-menu li a {
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav button {
+        margin-right: 2rem;
+    }
+
+
+
+/* =================================================
+----------------- Header(Mobile) ------------------
+================================================== */
+    .header-title {
+        padding-top: 11rem;
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header-socials {
+        display: none;
+    }
+
+
+
+/* =================================================
+----------------- About(Mobile) ------------------
+================================================== */
+    .about-article {
+        grid-template-columns: 1fr;
+        padding-top: 5rem;
+        text-align: center;
+        gap: 0;
+    }
+
+    .about-article:nth-child(2) .about-article-image {
+        grid-row: 1;
+    }
+
+
+
+/* =================================================
+----------------- Client(Mobile) ------------------
+================================================== */
+    .clients-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+
+
+
+/* =================================================
+----------------- Testimonial(Mobile) --------------
+================================================== */
+    .testimonial {
+        padding: 1.4rem;
+    }
+
+
+
+/* =================================================
+----------------- Testimonial(Mobile) --------------
+================================================== */
+.downloadApp-image {
+    width: 7rem;
+}
+
+
+
+/* =================================================
+----------------- Footer(Mobile) ------------------
+================================================== */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-1 {
+        width: var(--container-width-mobile);
+    }
+
+    .footer-1 p {
+        width: var(--container-width-mobile);
+        margin: 0 auto;
+    }
+
+    .footer-subscribe {
+        display: none;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+}

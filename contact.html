@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IconScout CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>SmartHome</title>
+</head>
+
+<body>
+
+    <!-- ============================== Navbar =============================== -->
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#faqs">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="index.html" class="nav-logo">
+                <h3>SmartHome</h3>
+            </a>
+
+
+            <div class="nav-signin-signup">
+                <a href="#">Login</a>
+                <a href="#" class="btn">Signup</a>
+            </div>
+
+            <button id="menu-open-btn"><i class="uil uil-bars"></i></button>
+            <button id="menu-close-btn"><i class="uil uil-times"></i></button>
+
+        </div>
+    </nav>
+
+
+
+    <!-- ============================== Contact Section =============================== -->
+    <section id="contact">
+        <div class="container">
+            <aside>
+                <h4>Get in touch</h4>
+                <p>We'd love to here from you. Our friendly team is here to chat</p>
+
+                <div class="info">
+                    <article>
+                        <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                        <div class="details">
+                            <h5>Chat with us</h5>
+                            <small>Send us an email and we'll respond shortly</small>
+                            <p>info@gmail.com</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="icon"><i class="uil uil-map-marker"></i></span>
+                        <div class="details">
+                            <h5>Office</h5>
+                            <small>Come say hello at our office</small>
+                            <p>123 street</p>
+                            <p>near HBL Bank</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="icon"><i class="uil uil-phone"></i></span>
+                        <div class="details">
+                            <h5>Phone</h5>
+                            <small>Mon-Fri from 8am - 4pm</small>
+                            <p>(+92) 398 989 ***</p>
+                        </div>
+                    </article>
+                </div>
+            </aside>
+
+
+            <form action="https://formspree.io/f/meqbeegj" method="POST">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email Address" placeholder="you@company.com" required>
+                <input type="number" name="Phone Number" placeholder="Phone Number" required>
+                <textarea name="Message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ============================== Footer Section =============================== -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-1">
+                <!-- <div > -->
+                <a href="index.html" class="footer-logo">
+                    <h3>SmartHome</h3>
+                </a>
+                <!-- </div> -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, doloribus enim!</p>
+                <div class="footer-subscribe">
+                    <input type="email" placeholder="Enter Email" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="footer-2">
+                <h4>Permalinks</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#faqs">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <h4>Privacy</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Comditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <h4>Contact Us</h4>
+                <p>+92 123 123 123 <br>
+                    smarthome@gmail.com</p>
+                <ul class="footer-socials">
+                    <li><a href="/facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="/twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="/instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="/linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <small>Copyright ©2023 All right reserved. | This Template is made by <span class="copyright-name">Ahmad
+                    Hassn</span> </small>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
